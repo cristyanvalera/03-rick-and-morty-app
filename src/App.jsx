@@ -23,21 +23,22 @@ function App() {
     };
 
     return (
-        <div>
+        <div className='app'>
             {isLoading ?
                 <h1>Loading...</h1>
                 :
                 <>
                     <h1>Rick & Morty</h1>
 
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className='app-form'>
                         <input
+                            className='app-text'
                             type="number"
                             ref={textSearch}
                             placeholder='Type a number (1 to 126'
                         />
 
-                        <button>Search</button>
+                        <button className='app-btn'>Search</button>
                     </form>
 
                     {hasError || finder === '0' ?
