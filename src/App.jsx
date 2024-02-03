@@ -25,10 +25,10 @@ function App() {
     return (
         <div>
             {isLoading ?
-                <h2>Loading...</h2>
+                <h1>Loading...</h1>
                 :
                 <>
-                    <h2>Rick & Morty</h2>
+                    <h1>Rick & Morty</h1>
 
                     <form onSubmit={handleSubmit}>
                         <input
