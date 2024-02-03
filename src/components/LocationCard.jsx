@@ -1,13 +1,19 @@
+import './styles/location-card.css';
+
 export const LocationCard = ({ location }) => {
     return (
-        <section>
-            <h2>{location?.name}</h2>
+        <section className='location'>
+            <h2 className='location-title'>{location?.name}</h2>
 
-            <ul>
-                <li><span>Type: </span>{location?.type}</li>
-                <li><span>Dimension: </span>{location?.dimension}</li>
-                <li><span>Population: </span>
-                    {location?.residents.length}
+            <ul className='location-list'>
+                <li className='location-item'>
+                    <span>Type:</span>{location?.type}
+                </li>
+                <li className='location-item'>
+                    <span>Dimension:</span>{location?.dimension}
+                </li>
+                <li className='location-item'>
+                    <span>Population:</span>{location?.residents.length}
                 </li>
             </ul>
         </section>

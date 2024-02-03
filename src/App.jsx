@@ -47,12 +47,14 @@ function App() {
                         <>
                             <LocationCard location={location} />
 
-                            {location?.residents.map(resident => (
-                                <ResidentCard
-                                    url={resident}
-                                    key={resident}
-                                />
-                            ))}
+                            <div className='app-container'>
+                                {location?.residents.map(resident => (
+                                    <ResidentCard
+                                        url={resident}
+                                        key={resident}
+                                    />
+                                ))}
+                            </div>
                         </>
                     }
                 </>
