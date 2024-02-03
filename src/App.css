@@ -48,10 +48,6 @@ h1 {
     align-items: center;
 }
 
-.app h2 {
-    padding-top: 1.5em;
-}
-
 .app-container {
     display: flex;
     flex-wrap: wrap;
