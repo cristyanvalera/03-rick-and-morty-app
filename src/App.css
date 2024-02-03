@@ -36,3 +36,28 @@ button {
 ul {
     list-style: none;
 }
+
+/* --- App Styles ---*/
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-form {
+    margin-top: 35px;
+}
+
+.app-text {
+    text-align: center;
+    width: 180px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.app-btn {
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    background-color: #71a821;
+    color: white;
+}
