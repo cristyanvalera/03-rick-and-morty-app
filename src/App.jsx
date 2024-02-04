@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
-import headerRickAndMorty from './assets/rick-morty-background-image.png';
 import { useFetch } from './hooks/useFetch';
 import { LocationCard } from './components/LocationCard';
 import { ResidentCard } from './components/ResidentCard';

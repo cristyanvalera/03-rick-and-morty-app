@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    background-color: #05292E;
     color: white;
 }
 
@@ -43,9 +42,12 @@ h1 {
 
 /* --- App Styles ---*/
 .app {
+    background-color: #05292E;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 35px;
 }
 
 .app-container {
@@ -53,6 +55,7 @@ h1 {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .app-form {
