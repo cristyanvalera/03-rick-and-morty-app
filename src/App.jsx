@@ -56,26 +56,32 @@ function App() {
                         <>
                             <LocationCard location={location} />
 
-                            <Pagination
-                                currentPage={currentPage}
-                                setCurrentPage={setCurrentPage}
-                                totalPages={totalPages}
-                            />
-
-                            <div className='app-container'>
-                                {residentsPart.map(resident => (
-                                    <ResidentCard
-                                        url={resident}
-                                        key={resident}
+                            {residentsPart.length > 0 ?
+                                <>
+                                    <Pagination
+                                        currentPage={currentPage}
+                                        setCurrentPage={setCurrentPage}
+                                        totalPages={totalPages}
                                     />
-                                ))}
-                            </div>
 
-                            <Pagination
-                                currentPage={currentPage}
-                                setCurrentPage={setCurrentPage}
-                                totalPages={totalPages}
-                            />
+                                    <div className='app-container'>
+                                        {residentsPart.map(resident => (
+                                            <ResidentCard
+                                                url={resident}
+                                                key={resident}
+                                            />
+                                        ))}
+                                    </div>
+
+                                    <Pagination
+                                        currentPage={currentPage}
+                                        setCurrentPage={setCurrentPage}
+                                        totalPages={totalPages}
+                                    />
+                                </>
+                                :
+                                <div></div>
+                            }
                         </>
                     }
                 </>
