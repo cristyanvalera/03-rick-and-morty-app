@@ -15,7 +15,8 @@ export const SearchForm = ({ setFinder }) => {
                 className='app-text'
                 type="number"
                 ref={textSearch}
-                placeholder='Type a number (1 to 126'
+                placeholder='Type a number (1 to 126)'
+                min="1"
             />
 
             <button className='app-btn'>Search</button>
